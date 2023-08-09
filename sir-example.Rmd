@@ -16,7 +16,7 @@ library(deSolve)
 ### Specify parameters
 
 ## Proportion in each compartment: Susceptible 0.999999, Infected 0.000001, Recovered 0 (these are directly from the example linked above)
-init <- c(S = 1-1e-6, I = 1e-6, R = 0.0)
+init <- c(S = 0.90, I = 0.10, R = 0.0)
 
 ## beta: infection parameter; gamma: recovery parameter
 parameters <- c(beta = 2.316, gamma = 0.261)
